@@ -70,3 +70,62 @@ In the JSON content above:
 ## Build and Open Dev Container
 
 Reopen the project folder, press `Ctrl+Shift+P` on Windows or `Cmd+Shift+P` on Mac, type `Dev Containers: Reopen in Container`, and select the corresponding option. Then, the image will be downloaded (may take a few minutes) and the project will be reopened in dev container. To verify Rust version, run `rustc --version` (1.83.0 on Jan. 26).
+
+## Create New Rust Project
+
+After entering the dev container, we can use the following command to create a new binary project:
+
+```bash
+cargo new hello-comp423 --vcs none
+cd hello-comp423
+```
+
+- `Cargo` is the package manager and build system for Rust used to create, build, and manage Rust projects. In the command above, `cargo new` is used to create a new Rust project named `hello-comp423`. More about Cargo and Rust can be found at [Github](https://github.com/rust-lang/book).
+
+- `--vcs` stands for "Version Control System", which is not necessary here because we've already created a Git repository. Therefore, we use `--vcs none` to avoid the automatic initialization of vcs.
+
+- The generated structure of the project contains:
+
+```bash
+hello-comp423/
+└── src/
+    └── main.rs
+```
+
+## Write the "Helloworld" Program
+
+Open the `src/main.rs` file in VSCode, and replace its contents with:
+
+```rust
+fn main() {
+    println!("Hello COMP423");
+}
+```
+
+- The `fn` keyword is used to define a function, and `fn main()` defines a function `main`, which is the entry point of executable program.
+
+- `println!("Hello COMP423");` print the given text to the standard output.
+
+## Build and Run the Program
+
+To build the program, use the `cargo build` command (which is similar to `gcc` command):
+
+```bash
+cargo build
+```
+
+The complied binary is in the `target/debug` directory, and it can be run directly:
+
+```bash
+./target/debug/hello-comp423
+```
+
+Alternatively, `cargo run` can build and immediately run the program in one step:
+
+```bash
+cargo run
+```
+
+## Congratulations!
+
+You have successfully run your first Rust program!
