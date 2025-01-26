@@ -80,8 +80,9 @@ cargo new hello-comp423 --vcs none
 cd hello-comp423
 ```
 
-- `Cargo` is the package manager and build system for Rust used to create, build, and manage Rust projects. In the command above, `cargo new` is used to create a new Rust project named `hello-comp423`. More about Cargo and Rust can be found at [Github](https://github.com/rust-lang/book).
+- `Cargo` It is Rust's official package manager and build system. Cargo simplifies tasks like project creation, dependency management, and building. More about Cargo and Rust can be found at [Github](https://github.com/rust-lang/book).
 
+- `Cargo new` This sub - command creates a new Rust project. In our case, we're creating a project named hello - comp423.
 - `--vcs` stands for "Version Control System", which is not necessary here because we've already created a Git repository. Therefore, we use `--vcs none` to avoid the automatic initialization of vcs.
 
 - The generated structure of the project contains:
