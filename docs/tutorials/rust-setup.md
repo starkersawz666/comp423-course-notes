@@ -126,6 +126,10 @@ Alternatively, `cargo run` can build and immediately run the program in one step
 cargo run
 ```
 
+## Result Following the Tutorial
+
+An expected result of the Rust project is given at [Github](https://github.com/starkersawz666/comp423-rust-container).
+
 ## Congratulations!
 
 You have successfully run your first Rust program!
