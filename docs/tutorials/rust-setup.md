@@ -59,13 +59,10 @@ and add the following content:
 }
 ```
 
-In the JSON content above:
-
-- **`image`** specifies the container image we use for the project, which is from Microsoft's Dev Container repository for Rust;
-
-- **`customizations.vscode.extensions`** helps add VSCode extensions of rust automatically in the dev container
-
-- **`postCreateCommand`** is the command run after the container is created. You can fill in other commands if you want to build your own rust environment.
+!!! question "What is the effect of the JSON content above?"
+    - **`image`** specifies the container image we use for the project, which is from Microsoft's Dev Container repository for Rust;
+    - **`customizations.vscode.extensions`** helps add VSCode extensions of rust automatically in the dev container
+    - **`postCreateCommand`** is the command run after the container is created. You can fill in other commands if you want to build your own rust environment.
 
 ## Build and Open Dev Container
 
@@ -133,4 +130,8 @@ An expected result of the Rust project is given at [Github](https://github.com/s
 
 ## Congratulations!
 
-You have successfully run your first Rust program!
+You have successfully run your first Rust program! You can read more about rust and dev container:
+
+- [Microsoft Rust Container](https://hub.docker.com/r/microsoft/devcontainers-rust)
+- [Dev Container in VSCode](https://code.visualstudio.com/docs/devcontainers/create-dev-container)
+- [Rust Documentation](https://doc.rust-lang.org/book/)
